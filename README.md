@@ -1,1 +1,1 @@
-Please see (the wiki)[https://github.com/bebraw/jswiki/wiki]. :)
+Please see [the wiki](https://github.com/bebraw/jswiki/wiki). :)
