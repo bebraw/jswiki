@@ -1,82 +1,143 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-  <meta charset='utf-8'>
+    <meta charset="utf-8">
+    <title>JSwiki</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <title>bebraw/jswiki @ GitHub</title>
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+    <link rel="stylesheet" href="stylesheets/layout.css">
+    <link rel="stylesheet" href="stylesheets/docs.css">
 
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #cfcfcf;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #303030; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #303030; }
-    h3 { text-align: center; color: #303030; }
-    a { color: #303030; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 </head>
-
 <body>
-  <a href="https://github.com/bebraw/jswiki"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+    <div class="container">
+        <div class="three columns sidebar">
+            <nav>
+            <h3 id="logo"><a href="/">JSwiki</a></h3>
+                <ul>
+                    
+                        <li><a href="#libraries">Libraries</a></li>
+                    
+                        <li><a href="#essentials">Essentials</a></li>
+                    
+                        <li><a href="#multimedia">Multimedia</a></li>
+                    
+                        <li><a href="#graphics">Graphics</a></li>
+                    
+                        <li><a href="#data">Data</a></li>
+                    
+                        <li><a href="#ui">UI</a></li>
+                    
+                        <li><a href="#utilities">Utilities</a></li>
+                    
+                        <li><a href="#applications">Applications</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div class="twelve columns offset-by-two content">
+            <header>
+                <h1><a href="/">JSwiki</a></h1>
+                <a href="http://twitter.com/share" class="twitter-share-button" data-text="JSwiki" data-count="horizontal" data-via="dhg">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            </header>
+            <hr class="large">
+            <div>
+                <p><p>Hi there! Welcome to jswiki.</p>
+<p>This wiki indexes libraries and resources available for JavaScript. In addition it provides some starting points for newbies in form of <a href="Beginner's-Resources.html">Beginner&#39;s Resources</a>. In case you want to contribute, do take a look at <a href="Meta.html">Meta</a> first for some extra pointers. Happy hacking!</p>
+<p>In addition to this site, you might want to check out <a href="https://github.com/DaRaFF/jsgamewiki">jsgamewiki</a>, <a href="http://microjs.com/">Microjs</a>, <a href="http://www.everyjs.com/">EveryJS</a> and <a href="http://jspkg.com/">JSPkg</a> to find more libraries.</p>
+<p>The following lists contain main categories of this site (sorted roughly based on page quality):</p></p>
+<h2><h2 id="libraries">Libraries</h2></h2>
+<h3><h3 id="essentials">Essentials</h3></h3>
+<ul>
+<li><p><a href="Application-Frameworks.html">Application Frameworks</a></p></li>
+<li><p><a href="Mobile-Frameworks.html">Mobile Frameworks</a></p></li>
+<li><p><a href="MVC-Frameworks.html">MVC Frameworks</a></p></li>
+<li><p><a href="MVVM-Frameworks.html">MVVM Frameworks</a></p></li>
+<li><p><a href="ServerSide-libraries.html">ServerSide libraries</a></p></li>
+<li><p><a href="Testing-frameworks.html">Testing frameworks</a></p></li>
+<li><p><a href="Templating-engines.html">Templating engines</a></p></li>
+<li><p><a href="Toolkits.html">Toolkits</a></p></li>
+<li><p><a href="Loaders.html">Loaders</a></p></li>
+</ul>
+<h3><h3 id="multimedia">Multimedia</h3></h3>
+<ul>
+<li><p><a href="Game-Engines.html">Game Engines</a></p></li>
+<li><p><a href="Physics-libraries.html">Physics libraries</a></p></li>
+<li><p><a href="Animation-libraries.html">Animation libraries</a></p></li>
+<li><p><a href="Audio-libraries.html">Audio libraries</a></p></li>
+<li><p><a href="Scene-graphs.html">Scene graphs</a></p></li>
+</ul>
+<h4><h4 id="graphics">Graphics</h4></h4>
+<ul>
+<li><p><a href="Canvas-Wrappers.html">Canvas Wrappers</a></p></li>
+<li><p><a href="WebGL.html">WebGL</a></p></li>
+<li><p><a href="Image-manipulation.html">Image manipulation</a></p></li>
+<li><p><a href="Visualization-libraries.html">Visualization libraries</a></p></li>
+<li><p><a href="SVG-libraries.html">SVG libraries</a></p></li>
+<li><p><a href="Color-libraries.html">Color libraries</a></p></li>
+<li><p><a href="Mapping-libraries.html">Mapping libraries</a></p></li>
+</ul>
+<h3><h3 id="data">Data</h3></h3>
+<ul>
+<li><p><a href="Data-structures.html">Data structures</a></p></li>
+<li><p><a href="Date-libraries.html">Date libraries</a></p></li>
+<li><p><a href="File-Formats.html">File Formats</a></p></li>
+<li><p><a href="Storage-libraries.html">Storage libraries</a></p></li>
+<li><p><a href="Strings.html">Strings</a></p></li>
+</ul>
+<h3><h3 id="ui">UI</h3></h3>
+<ul>
+<li><p><a href="UI-Libraries.html">UI Libraries</a></p></li>
+<li><p><a href="Keyboard-wrappers.html">Keyboard wrappers</a></p></li>
+<li><p><a href="Notifications.html">Notifications</a></p></li>
+<li><p><a href="Presentation-libraries.html">Presentation libraries</a></p></li>
+<li><p><a href="Timing.html">Timing</a></p></li>
+<li><p><a href="Touch.html">Touch</a></p></li>
+</ul>
+<h3><h3 id="utilities">Utilities</h3></h3>
+<ul>
+<li><p><a href="Async---Control-Flow---Event-Libraries.html">Async / Control Flow / Event</a></p></li>
+<li><p><a href="Class-System.html">Class System</a></p></li>
+<li><p><a href="Code-protection.html">Code protection</a></p></li>
+<li><p><a href="https://github.com/jashkenas/coffee-script/wiki/List-of-languages-that-compile-to-JS">Compilers and Parsers</a></p></li>
+<li><p><a href="Debugging-Tools.html">Debugging Tools</a></p></li>
+<li><p><a href="Documentation-Tools.html">Documentation Tools</a></p></li>
+<li><p><a href="DOM.html">DOM</a></p></li>
+<li><p><a href="Functional-programming.html">Functional programming</a></p></li>
+<li><p><a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">HTML5 Cross Browser Polyfills</a></p></li>
+<li><p><a href="Math-libraries.html">Math libraries</a></p></li>
+<li><p><a href="http://clausreinke.github.com/js-tools/resources.html">ECMAScript language tools</a></p></li>
+<li><p><a href="Routing.html">Routing</a></p></li>
+<li><p><a href="Session.html">Session</a></p></li>
+<li><p><a href="Build-Utilities.html">Build Utilities</a></p></li>
+</ul>
+<h2><h2 id="applications">Applications</h2></h2>
+<ul>
+<li><p><a href="Html5-Applications.html">Html5 Applications</a></p></li>
+<li><p><a href="Code-editors.html">Code editors</a></p></li>
+<li><p><a href="WYSIWYG-editors.html">WYSIWYG editors</a></p></li>
+</ul>
 
-  <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/bebraw/jswiki/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/bebraw/jswiki/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+            </div>
+        </div>
     </div>
 
-    <h1><a href="https://github.com/bebraw/jswiki">jswiki</a>
-      <span class="small">by <a href="https://github.com/bebraw">bebraw</a></span></h1>
-
-    <div class="description">
-      JavaScript wiki. Focuses mainly on JS/HTML5/WebGL related tech.
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/bebraw/jswiki/zipball/master">zip</a> or
-      <a href="https://github.com/bebraw/jswiki/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/bebraw/jswiki</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/bebraw/jswiki">bebraw/jswiki</a>
-    </div>
-
-  </div>
-
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="javascripts/tabs.js"></script>
 </body>
 </html>

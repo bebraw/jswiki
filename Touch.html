@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>JSwiki</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+    <link rel="stylesheet" href="stylesheets/layout.css">
+    <link rel="stylesheet" href="stylesheets/docs.css">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+</head>
+<body>
+    <div class="container">
+        <div class="three columns sidebar">
+            <nav>
+            <h3 id="logo"><a href="/">JSwiki</a></h3>
+                <ul>
+                    
+                        <li><a href="#touch event stuff">touch event stuff</a></li>
+                    
+                        <li><a href="#gestures">gestures</a></li>
+                    
+                        <li><a href="#scrolling">scrolling</a></li>
+                    
+                        <li><a href="#debugging">debugging</a></li>
+                    
+                        <li><a href="#touch specific components">touch specific components</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div class="twelve columns offset-by-two content">
+            <header>
+                <h1><a href="/">JSwiki</a></h1>
+                <a href="http://twitter.com/share" class="twitter-share-button" data-text="JSwiki" data-count="horizontal" data-via="dhg">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            </header>
+            <hr class="large">
+            <div>
+                <p><p>Javascript libraries for dealing with touch events, multitouch, normalizing across the Webkit/IE touch models, and all that jazz.</p></p>
+<hr>
+
+<p><p><em>Note: these could use some categorization and better detail</em></p></p>
+<h2><h2 id="touch event stuff">touch event stuff</h2></h2>
+<ul>
+<li><p><a href="https://github.com/cpojer/mootools-mobile">mootools-mobile</a> - Wraps click handlers with touch and provides some custom events.</p></li>
+<li><p><a href="https://github.com/technoweenie/jquery.doubletap">jquery.doubletap</a> - Custom touch events for jQuery. <a href="http://techno-weenie.net/jquery.doubletap/">Demo</a>.</p></li>
+<li><p><a href="https://github.com/cubiq/touch-layer">touch-layer</a> - Custom events and gestures handler for touch enable mobile devices.</p></li>
+<li><p><a href="https://github.com/alexgibson/WKTouch">WKTouch</a> - Hardware accelerated multi-touch drag, scale and rotate plugin for Mobile Webkit.</p></li>
+<li><p><a href="http://eightmedia.github.com/hammer.js/">Hammer.js</a> - A javascript library (only 2kb, but depends on jquery) for multi-touch gestures: Tap, Drag, Pinch, Hold</p></li>
+<li><p><a href="http://jgestures.codeplex.com/&lt;/p&gt;">http://jgestures.codeplex.com/&lt;/p&gt;</a></li>
+<li><p><a href="http://labs.skinkers.com/touchSwipe/&lt;/p&gt;">http://labs.skinkers.com/touchSwipe/&lt;/p&gt;</a></li>
+<li><p><a href="https://github.com/max-power/swipeslide&lt;/p&gt;">https://github.com/max-power/swipeslide&lt;/p&gt;</a></li>
+<li><p><a href="https://github.com/borismus/MagicTouch">MagicTouch.js</a> - Standards-compatible touch event polyfill to map trackpad touches to touch events. Uses NPAPI plugin.</p></li>
+<li><p><a href="https://github.com/dotmaster/Touchable-jQuery-Plugin">Touchable</a> - Unifies touch and mouse events</p></li>
+<li><p><a href="https://github.com/jairajs89/Touchy.js?utm_source=javascriptweekly">Touchy</a> - Lightweight (no dependencies) multi-touch, models individual fingers</p></li>
+<li><p><a href="http://mwbrooks.github.com/thumbs.js">thumbsjs</a> - from the PhoneGap team. Heavily tested on many devices. Mature.</p></li>
+<li><p><a href="http://yuilibrary.com/yui/docs/event/touch.html">YUI 3 touch abstraction</a> - support for subscribing to native touch and gesture events</p></li>
+<li><p><a href="https://github.com/jquery/jquery-mobile/blob/master/js/jquery.mobile.vmouse.js">jQuery Mobile vmouse</a> - from the jQuery Mobile team. Supports normalized handling of mouse and touch events under one event convention: vclick, vmousedown, vmouseup, vmousemove, etc.</p></li>
+<li><p><a href="https://github.com/DamonOehlman/interact">interact</a> - abstracted mouse and touch events into generic pointer events.  Uses <a href="https://github.com/DmitryBaranovskiy/eve">eve</a> under the hood.</p></li>
+<li><p><a href="https://github.com/alexgibson/tap.js">tap.js</a> - A lightweight &#39;tap&#39; event JavaScript plugin for mobile browsers (no dependencies)</p></li>
+<li><p><a href="https://github.com/cheeaun/tappable">tappable</a> - A simple, standalone library to invoke the tap event for touch-friendly web browsers.</p></li>
+</ul>
+<h1><h1 id="gestures">gestures</h1></h1>
+<ul>
+<li><p><a href="https://github.com/emberjs-addons/sproutcore-touch/">Ember-Touch</a> - A lightweight library for building and using touch gestures with Ember Applications.</p></li>
+<li><p><a href="https://github.com/plainview/Jester">Jester</a> - Easy JavaScript gesture recognition for iPhone and iPad.</p></li>
+<li><p><a href="https://github.com/taitems/Mobile-Web-based-Gesture-Recognition">Mobile-Web-based-Gesture-Recognition</a> - Based on <a href="http://depts.washington.edu/aimgroup/proj/dollar/">Dollar</a>. <a href="http://taitems.github.com/Mobile-Web-based-Gesture-Recognition/">Demo</a>.</p></li>
+<li><p><a href="https://github.com/alexgibson/shake.js">shake.js</a> - A custom &#39;shake&#39; event plugin for mobile web browsers using device accelerometer. (Okay, not strictly touch, but it does require you to use your hand :P)</p></li>
+</ul>
+<h1><h1 id="scrolling">scrolling</h1></h1>
+<ul>
+<li><p><a href="http://uxebu.com/blog/2010/04/27/touchscroll-a-scrolling-layer-for-webkit-mobile/">TouchScroll</a></p></li>
+<li><p><a href="http://cubiq.org/iscroll-4">iScroll</a></p></li>
+<li><p><a href="http://joehewitt.github.com/scrollability/">Scrollability</a></p></li>
+<li><p><a href="https://github.com/scottjehl/Overthrow">Overthrow</a></p></li>
+<li><p><a href="http://iwantaneff.in/repo/plugins/droid-touch/antiscroll/">AntiScroll</a></p></li>
+<li><p><a href="http://iwantaneff.in/repo/plugins/droid-touch/droid.scroll/">Droid Scroll Emulation</a></p></li>
+<li><p><a href="http://iwantaneff.in/repo/plugins/droid-touch/droid.overscroll/">jQuery Overscroll</a></p></li>
+</ul>
+<h1><h1 id="debugging">debugging</h1></h1>
+<ul>
+<li><p><a href="http://www.vodori.com/blog/phantom-limb.html">phantom limb</a> - make desktop browsers simulate touch events. with a big hand</p></li>
+<li><p><a href="https://github.com/davidcalhoun/touche">touche</a></p></li>
+</ul>
+<h1><h1 id="touch specific components">touch specific components</h1></h1>
+<ul>
+<li><p><a href="http://swipejs.com/">Swipe JS</a> - carousel (aka slider) component that is touch friendly</p></li>
+<li><p><a href="http://www.idangero.us/sliders/swiper/">Swiper</a> - mobile touch slider with hardware accelerated transitions</p></li>
+<li><p><a href="https://github.com/filamentgroup/jqm-pagination">jQuery Mobile Pagination</a> - touch-drag pagination between separate HTML documents or jQuery Mobile &quot;pages&quot;</p></li>
+<li><p><a href="https://github.com/alexgibson/WKSlider">wkslider</a> - A touch–optimised UI range slider JavaScript plugin (no dependencies)</p></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="javascripts/tabs.js"></script>
+</body>
+</html>
