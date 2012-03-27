@@ -40,7 +40,7 @@
         <div class="three columns sidebar">
             <nav>
             <h3 id="logo">{{ name }}</h3>
-                <ul>
+                <ul id="navi">
                     {{#sections}}
                         <li><a href="#{{id}}">{{name}}</a></li>
                     {{/sections}}
@@ -67,6 +67,8 @@
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="javascripts/jquery.masonry.min.js"></script>
     <script type="text/javascript" src="javascripts/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.scrollto.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.localscroll.min.js"></script>
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script type="text/javascript">
         $(function() {
@@ -75,6 +77,7 @@
                 columnWidth: function(w) { return w / 3; }
             });
             $('table').tablesorter();
+            $.localScroll();
         });
     </script>
 </body>
