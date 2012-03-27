@@ -57,7 +57,7 @@
                 </div>
             </header>
             <div>
-                <p><p><table><tr><th>Name </th><th> Latest Release </th><th> Size (KB) </th><th> License </th><th> Unit Tests </th><th> Deps </th><th> IE </th><th> SVG </th><th> Docs </th><th> Notes </th></tr><tr><td><a href="http://github.com/F1LT3R/burst">burst</a></td><td></td><td>56</td><td></td><td></td><td></td><td></td><td></td><td>yes</td><td>Not maintained anymore</td></tr><tr><td><a href="http://code.google.com/p/canvg/">canvg</a></td><td></td><td>78.3</td><td></td><td>yes</td><td></td><td></td><td>yes</td><td>no</td></tr><tr><td><a href="http://raphaeljs.com/">Raphaël</a></td><td>2.0.1</td><td>84</td><td>MIT</td><td></td><td></td><td>yes</td><td>yes</td><td>yes</td></tr></table></p></p>
+                <p><p><table><thead><tr><th>Name </th><th> Latest Release </th><th> Size (KB) </th><th> License </th><th> Unit Tests </th><th> Deps </th><th> IE </th><th> SVG </th><th> Docs </th><th> Notes </th></tr></thead><tbody><tr><td><a href="http://github.com/F1LT3R/burst">burst</a></td><td></td><td>56</td><td></td><td></td><td></td><td></td><td></td><td>yes</td><td>Not maintained anymore</td></tr><tr><td><a href="http://code.google.com/p/canvg/">canvg</a></td><td></td><td>78.3</td><td></td><td>yes</td><td></td><td></td><td>yes</td><td>no</td></tr><tr><td><a href="http://raphaeljs.com/">Raphaël</a></td><td>2.0.1</td><td>84</td><td>MIT</td><td></td><td></td><td>yes</td><td>yes</td><td>yes</td></tr></tbody></table></p></p>
 
             </div>
         </div>
@@ -65,6 +65,7 @@
 
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="javascripts/jquery.masonry.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.tablesorter.min.js"></script>
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script type="text/javascript">
         $(function() {
@@ -72,6 +73,7 @@
                 gutterWidth: 100,
                 columnWidth: function(w) { return w / 3; }
             });
+            $('table').tablesorter();
         });
     </script>
 </body>
