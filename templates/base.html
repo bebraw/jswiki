@@ -5,7 +5,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>JSwiki</title>
+    <title>{{ name }}</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -28,7 +28,7 @@
     <div class="container">
         <div class="three columns sidebar">
             <nav>
-            <h3 id="logo"><a href="/">JSwiki</a></h3>
+            <h3 id="logo">{{ name }}</h3>
                 <ul>
                     {{#sections}}
                         <li><a href="#{{id}}">{{name}}</a></li>
@@ -36,12 +36,14 @@
                 </ul>
             </nav>
         </div>
-        <div class="twelve columns offset-by-two content">
+        <div class="twelve columns offset-by-three content">
             <header>
-                <h1><a href="/">JSwiki</a></h1>
-                <a href="http://twitter.com/share" class="twitter-share-button" data-text="JSwiki" data-count="horizontal" data-via="dhg">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                <h1>{{ name }}</h1>
+                <div id="social">
+                    <a href="http://twitter.com/share" class="twitter-share-button" data-text="Mywiki" data-count="horizontal" data-via="dhg">Tweet</a>
+                    <a href="{{ wikiUrl }}/{{ pageName }}/_edit" class="button">Edit</a>
+                </div>
             </header>
-            <hr class="large">
             <div>
                 {{{ data }}}
             </div>
@@ -49,6 +51,6 @@
     </div>
 
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script src="javascripts/tabs.js"></script>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 </body>
 </html>
