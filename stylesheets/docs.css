@@ -115,40 +115,31 @@
 
     ul ul ul li { margin-bottom: 3px; }
 
-    .twitter-share-button { margin-bottom: -18px; }
-
-.carbonad,
-.carbonad-image,
-.carbonad-text,
-.carbonad-tag {
-    background: none !important;
-    border: none !important;
-    margin-left: 0 !important;
-}
-.carbonad-tag {
-    margin-top: 6px !important;
-    padding-top: 0 !important;
-}
-.carbonad-text {
-    height: auto !important;
-}
-.carbonad-image {
-    margin-top: 0 !important;
-}
-
+    /*.twitter-share-button { margin-bottom: -18px; }*/
 
     /* Mobile */
     @media only screen and (max-width: 767px) {
         header h1 { font-size: 34px; line-height: 37px; }
         nav { position: relative; }
         nav ul,
-        .carbonad {
-                display: none;
-        }
         #logo { text-align: left; }
         #examples .four.columns {
             padding-top: 30px;
         }
+    }
+
+    /* Custom Tweaks */
+    header {
+        width: 100%;
+        display: inline-block;
+    }
+
+    header h1 {
+        float: left;
+    }
+
+    #social {
+        float: right;
     }
 
     /* Mobile Landscape */
