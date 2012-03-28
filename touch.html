@@ -77,6 +77,7 @@
 <p><p><em>Note: these could use some categorization and better detail</em></p></p>
 <h2><h2 id="touch event stuff">touch event stuff</h2></h2>
 <ul>
+<li><p><a href="https://github.com/HotStudio/touchy">Touchy</a> - Highly configurable jQuery plugin. Exposes event data (velocity, etc) for longpress, drag, pinch, rotate, swipe. Example use cases: prevent conflict between drag and swipe; get pinch abstracted across Android and iOS; create a <a href="http://hotstudio.github.com/touchy/examples/wheel.html">single finger rotation</a>. </p></li>
 <li><p><a href="https://github.com/cpojer/mootools-mobile">mootools-mobile</a> - Wraps click handlers with touch and provides some custom events.</p></li>
 <li><p><a href="https://github.com/technoweenie/jquery.doubletap">jquery.doubletap</a> - Custom touch events for jQuery. <a href="http://techno-weenie.net/jquery.doubletap/">Demo</a>.</p></li>
 <li><p><a href="https://github.com/cubiq/touch-layer">touch-layer</a> - Custom events and gestures handler for touch enable mobile devices.</p></li>
@@ -156,7 +157,7 @@
                 columnWidth: function(w) { return w / 3; }
             });
             $('table').tablesorter();
-            $.localScroll();
+            $.localScroll({duration: 200});
         });
     </script>
 </body>

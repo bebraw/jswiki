@@ -42,6 +42,12 @@
             <h3 id="logo"><a href="/">JSwiki</a></h3>
                 <ul id="navi">
                     
+                        <li><a href="#lightweight versions">Lightweight versions</a></li>
+                    
+                        <li><a href="#heavyweights">Heavyweights</a></li>
+                    
+                        <li><a href="#references">References</a></li>
+                    
                 </ul>
             </nav>
         </div>
@@ -57,17 +63,45 @@
                 </div>
             </header>
             <div>
-                <ul>
-<li><p><a href="http://ckeditor.com/">CKEditor</a></p></li>
-<li><p><a href="http://tinymce.moxiecode.com/">TinyMCE</a></p></li>
+                <h2><h2 id="lightweight versions">Lightweight versions</h2></h2>
+<ul>
+<li><p><a href="http://github.com/spocke/punymce">PunyMCE</a>, from the authors of TinyMCE</p></li>
+<li><p><a href="http://nicedit.com/">NiceEdit</a></p></li>
+<li><p><a href="http://github.com/37signals/wysihat">WysiHat</a> (Prototype)</p></li>
+<li><p><a href="http://code.google.com/p/widgeditor/">widgEditor</a></p></li>
+<li><p><a href="http://www.wymeditor.org/">WYMeditor</a> (jQuery)</p></li>
+<li><p><a href="http://code.google.com/p/jwysiwyg/">jWYSIWYG</a> (jQuery) <a href="http://akzhan.github.com/jwysiwyg/">GitHub</a></p></li>
+<li><p><a href="http://code.google.com/p/ggedit/">ggEdit</a> (MooTools)</p></li>
+<li><p><a href="http://developer.yahoo.com/yui/editor/">YUI Rich Text Editor</a> - SimpleEditor (YUI)</p></li>
+<li><p><a href="http://www.upian.com/upiansource/ueditor/en/">uEditor</a> (jQuery)</p></li>
+<li><p><a href="http://code.google.com/p/loki-editor/">Loki</a></p></li>
+<li><p><a href="http://github.com/siteroller/moorte">MooRTE</a> (MooTools)</p></li>
+<li><p><a href="http://wmd-editor.com/">WMD</a> - Markdown Editor</p></li>
+<li><p><a href="http://code.google.com/p/closure-library/">goog.editor</a> (Closure Library) <a href="http://closure-library.googlecode.com/svn/trunk/closure/goog/demos/editor/editor.html">Demo</a></p></li>
+<li><p><a href="http://lwrte.googlecode.com/">lwrte</a> (jQuery)</p></li>
+<li><p><a href="http://wkrte.googlecode.com/">wkrte</a> (jQuery)</p></li>
+<li><p><a href="http://jhtmlarea.codeplex.com/">jHtmlArea</a> (jQuery)</p></li>
+<li><p><a href="http://www.leigeber.com/2010/02/javascript-wysiwyg-editor/">TinyEditor</a> (jQuery)</p></li>
+<li><p><a href="http://aloha-editor.com/">Aloha Editor</a></p></li>
+<li><p><a href="http://www.dojotoolkit.org/reference-guide/dijit/Editor.html">dijit.Editor</a> (Dojo)</p></li>
+<li><p><a href="http://premiumsoftware.net/cleditor/">CLEditor</a> (jQuery)</p></li>
+<li><p><a href="https://github.com/xing/wysihtml5">wysihtml5</a></p></li>
 <li><p><a href="http://sourceforge.net/projects/mfpeditor/">mfpEditor</a></p></li>
-<li><p><a href="http://aloha-editor.org">Aloha Editor</a></p></li>
-<li><p><a href="https://github.com/akzhan/jwysiwyg">JWYSIWYG</a></p></li>
 <li><p><a href="http://createjs.org/">Create</a></p></li>
 <li><p><a href="http://bergie.github.com/hallo/">Hallo</a></p></li>
-<li><p><a href="http://www.wymeditor.org/">WYMeditor</a></p></li>
-<li><p><a href="http://akzhan.github.com/jwysiwyg/">jWysiwyg</a></p></li>
-<li><p><a href="http://jejacks0n.github.com/mercury/">Mercury Editor</a></p></li>
+</ul>
+<h2><h2 id="heavyweights">Heavyweights</h2></h2>
+<ul>
+<li><p><a href="http://tinymce.moxiecode.com/">TinyMCE</a></p></li>
+<li><p><a href="http://www.fckeditor.net/">FCKeditor</a></p></li>
+<li><p><a href="http://ckeditor.com/">CKEditor</a> (next generation of FCKeditor)</p></li>
+<li><p><a href="http://developer.yahoo.com/yui/editor/">YUI Rich Text Editor</a> - Editor (YUI)</p></li>
+<li><p><a href="http://elrte.ru/en/">elRTE</a> (jQuery UI)</p></li>
+<li><p><a href="http://jejacks0n.github.com/mercury/">Mercury Editor</a> (jQuery, CoffeeScript, Rails)</p></li>
+</ul>
+<h2><h2 id="references">References</h2></h2>
+<ul>
+<li><p><a href="https://github.com/cheeaun/mooeditable/wiki/Alternative-Javascript-WYSIWYG-editors">cheeaun&#39;s &quot;Alternative Javascript WYSIWYG editors&quot;</a></p></li>
 </ul>
 
             </div>
@@ -87,7 +121,7 @@
                 columnWidth: function(w) { return w / 3; }
             });
             $('table').tablesorter();
-            $.localScroll();
+            $.localScroll({duration: 200});
         });
     </script>
 </body>
