@@ -142,6 +142,26 @@
         float: right;
     }
 
+    table td {
+        padding: 0.5em;
+    }
+
+    table td, table th {
+        border-right: 1px solid #bbb;
+    }
+
+    table td:last-child, table th:last-child {
+        border-right: none;
+    }
+
+    table thead {
+        border-bottom: 1px solid #bbb;
+    }
+
+    table tbody tr:nth-child(odd) {
+        background-color: #ddd;
+    }
+
     /* Mobile Landscape */
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         nav ul {
