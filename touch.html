@@ -41,13 +41,18 @@
             <nav>
             <h3 id="logo"><a href="/">JSwiki</a></h3>
                 <ul id="navi">
-                        <li><a href="#touch event stuff">touch event stuff</a></li>
-                        <li><a href="#gestures">gestures</a></li>
-                        <li><a href="#scrolling">scrolling</a></li>
-                        <li><a href="#speeding up click events">speeding up click events</a></li>
-                        <li><a href="#debugging">debugging</a></li>
-                        <li><a href="#touch specific components">touch specific components</a></li>
-                        <li><a href="#multimedia (videos, tutorials, etc.)">multimedia (videos, tutorials, etc.)</a></li>
+                        <li><a href="#touch event libraries">Touch Event Libraries</a></li>
+                        <li><a href="#dojo">Dojo</a></li>
+                        <li><a href="#jquery">jQuery</a></li>
+                        <li><a href="#mootools">MooTools</a></li>
+                        <li><a href="#yui">YUI</a></li>
+                        <li><a href="#other">Other</a></li>
+                        <li><a href="#gestures">Gestures</a></li>
+                        <li><a href="#scrolling">Scrolling</a></li>
+                        <li><a href="#speeding up click events">Speeding Up Click Events</a></li>
+                        <li><a href="#debugging">Debugging</a></li>
+                        <li><a href="#touch specific components">Touch Specific Components</a></li>
+                        <li><a href="#multimedia (videos, tutorials, etc.)">Multimedia (videos, tutorials, etc.)</a></li>
                 </ul>
             </nav>
         </div>
@@ -64,14 +69,39 @@
             </header>
             <div>
                 <p><p>Javascript libraries for dealing with touch events, multitouch, normalizing across the Webkit/IE touch models, and all that jazz.</p></p>
-<hr>
-
-<p><p><em>Note: these could use some categorization and better detail</em></p></p>
-<h2><h2 id="touch event stuff">touch event stuff</h2></h2>
+<h2><h2 id="touch event libraries">Touch Event Libraries</h2></h2>
+<h3><h3 id="dojo">Dojo</h3></h3>
 <ul>
-<li><p><a href="https://github.com/HotStudio/touchy">Touchy</a> - Highly configurable jQuery plugin. Exposes event data (velocity, etc) for longpress, drag, pinch, rotate, swipe. Example use cases: prevent conflict between drag and swipe; get pinch abstracted across Android and iOS; create a <a href="http://hotstudio.github.com/touchy/examples/wheel.html">single finger rotation</a>. </p></li>
-<li><p><a href="https://github.com/cpojer/mootools-mobile">mootools-mobile</a> - Wraps click handlers with touch and provides some custom events.</p></li>
+<li><p><a href="http://dojotoolkit.org/reference-guide/1.7/dojo/touch.html">dojo/touch</a> - Dojo detection functions for touch events</p></li>
+</ul>
+<h3><h3 id="jquery">jQuery</h3></h3>
+<ul>
 <li><p><a href="https://github.com/technoweenie/jquery.doubletap">jquery.doubletap</a> - Custom touch events for jQuery. <a href="http://techno-weenie.net/jquery.doubletap/">Demo</a>.</p></li>
+<li><p><a href="https://github.com/HotStudio/touchy">Touchy</a> - Highly configurable jQuery plugin. Exposes event data (velocity, etc) for longpress, drag, pinch, rotate, swipe. Example use cases: prevent conflict between drag and swipe; get pinch abstracted across Android and iOS; create a <a href="http://hotstudio.github.com/touchy/examples/wheel.html">single finger rotation</a>. </p></li>
+<li><p><a href="http://wiki.jqueryui.com/Interaction">jQuery UI Interactions</a> - Rewrite of the existing jQuery UI interactions, now with mouse, touche and pointer (aka MSPointer) support. Work in progress, but draggable already works great for all three event APIs.</p></li>
+<li><p><a href="https://github.com/furf/jquery-ui-touch-punch">jquery-ui-touch-punch</a> - A duck punch for adding touch events to jQuery UI</p></li>
+<li><p><a href="http://pep.briangonzalez.org">pep.jquery.js</a> - A lightweight plugin for kinetic-drag on mobile &amp; desktop</p></li>
+<li><p><a href="http://github.com/stephband/jquery.event.move/">jQuery.event.move</a> - jQuery special events <b>movestart</b>, <b>move</b> and <b>moveend</b> for tracking touch and mouse moves, throttled to browser animation frames, and exposing information about distance and velocity of fingers. Demo at <a href="http://stephband.info/jquery.event.move/">stephband.info/jquery.event.move/</a>.</p></li>
+<li><p><a href="http://github.com/stephband/jquery.event.swipe/">jQuery.event.swipe</a> - jQuery special events for the gestures <b>swipeleft</b>, <b>swiperight</b>, <b>swipeup</b> and <b>swipedown</b>, built on top of jQuery.event.move. Demo at <a href="http://stephband.info/jquery.event.swipe/">stephband.info/jquery.event.swipe/</a>.</p></li>
+<li><p><a href="https://github.com/jquery/jquery-mobile/blob/master/js/jquery.mobile.vmouse.js">jQuery Mobile vmouse</a> - from the jQuery Mobile team. Supports normalized handling of mouse and touch events under one event convention: vclick, vmousedown, vmouseup, vmousemove, etc.</p></li>
+<li><p><a href="https://github.com/dotmaster/Touchable-jQuery-Plugin">Touchable</a> - Unifies touch and mouse events</p></li>
+</ul>
+<h3><h3 id="mootools">MooTools</h3></h3>
+<ul>
+<li><p><a href="https://github.com/cpojer/mootools-mobile">mootools-mobile</a> - Wraps click handlers with touch and provides some custom events.</p></li>
+</ul>
+<h3><h3 id="yui">YUI</h3></h3>
+<ul>
+<li><p><a href="http://yuilibrary.com/yui/docs/event/touch.html">YUI 3 touch abstraction</a> - support for subscribing to native touch and gesture events</p></li>
+</ul>
+<h3><h3 id="other">Other</h3></h3>
+<ul>
+<li><p><a href="https://github.com/andyjamesdavies/jsTouchLayer">jsTouchLayer</a> - A javascript based touch events library, agnostic of any javascript libraries.</p></li>
+<li><p><a href="https://github.com/DamonOehlman/interact">interact</a> - abstracted mouse and touch events into generic pointer events.  Uses <a href="https://github.com/DmitryBaranovskiy/eve">eve</a> under the hood.</p></li>
+<li><p><a href="https://github.com/alexgibson/tap.js">tap.js</a> - A lightweight &#39;tap&#39; event JavaScript plugin for mobile browsers (no dependencies)</p></li>
+<li><p><a href="https://github.com/cheeaun/tappable">tappable</a> - A simple, standalone library to invoke the tap event for touch-friendly web browsers.</p></li>
+<li><p><a href="https://github.com/jairajs89/Touchy.js">Touchy</a> - Lightweight (no dependencies) multi-touch, models individual fingers</p></li>
+<li><p><a href="http://mwbrooks.github.com/thumbs.js">thumbsjs</a> - from the PhoneGap team. Heavily tested on many devices. Mature.</p></li>
 <li><p><a href="https://github.com/cubiq/touch-layer">touch-layer</a> - Custom events and gestures handler for touch enable mobile devices.</p></li>
 <li><p><a href="https://github.com/alexgibson/WKTouch">WKTouch</a> - Hardware accelerated multi-touch drag, scale and rotate plugin for Mobile Webkit.</p></li>
 <li><p><a href="http://eightmedia.github.com/hammer.js/">Hammer.js</a> - A javascript library (only 2kb) for multi-touch gestures: Tap, Drag, Pinch, Hold</p></li>
@@ -79,31 +109,16 @@
 <li><p><a href="http://labs.skinkers.com/touchSwipe/">labs.skinkers.com/touchSwipe/</a></p></li>
 <li><p><a href="https://github.com/max-power/swipeslide">github.com/max-power/swipeslide</a></p></li>
 <li><p><a href="https://github.com/borismus/MagicTouch">MagicTouch.js</a> - Standards-compatible touch event polyfill to map trackpad touches to touch events. Uses NPAPI plugin.</p></li>
-<li><p><a href="https://github.com/dotmaster/Touchable-jQuery-Plugin">Touchable</a> - Unifies touch and mouse events</p></li>
-<li><p><a href="https://github.com/jairajs89/Touchy.js?utm_source=javascriptweekly">Touchy</a> - Lightweight (no dependencies) multi-touch, models individual fingers</p></li>
-<li><p><a href="http://mwbrooks.github.com/thumbs.js">thumbsjs</a> - from the PhoneGap team. Heavily tested on many devices. Mature.</p></li>
-<li><p><a href="http://yuilibrary.com/yui/docs/event/touch.html">YUI 3 touch abstraction</a> - support for subscribing to native touch and gesture events</p></li>
-<li><p><a href="https://github.com/jquery/jquery-mobile/blob/master/js/jquery.mobile.vmouse.js">jQuery Mobile vmouse</a> - from the jQuery Mobile team. Supports normalized handling of mouse and touch events under one event convention: vclick, vmousedown, vmouseup, vmousemove, etc.</p></li>
-<li><p><a href="https://github.com/DamonOehlman/interact">interact</a> - abstracted mouse and touch events into generic pointer events.  Uses <a href="https://github.com/DmitryBaranovskiy/eve">eve</a> under the hood.</p></li>
-<li><p><a href="https://github.com/alexgibson/tap.js">tap.js</a> - A lightweight &#39;tap&#39; event JavaScript plugin for mobile browsers (no dependencies)</p></li>
-<li><p><a href="https://github.com/cheeaun/tappable">tappable</a> - A simple, standalone library to invoke the tap event for touch-friendly web browsers.</p></li>
-<li><p><a href="https://github.com/andyjamesdavies/jsTouchLayer">jsTouchLayer</a> - A javascript based touch events library, agnostic of any javascript libraries.</p></li>
-<li><p><a href="http://dojotoolkit.org/reference-guide/1.7/dojo/touch.html">dojo/touch</a> - Dojo detection functions for touch events</p></li>
-<li><p><a href="http://wiki.jqueryui.com/Interaction">jQuery UI Interactions</a> - Rewrite of the existing jQuery UI interactions, now with mouse, touche and pointer (aka MSPointer) support. Work in progress, but draggable already works great for all three event APIs.</p></li>
-<li><p><a href="https://github.com/furf/jquery-ui-touch-punch">jquery-ui-touch-punch</a> - A duck punch for adding touch events to jQuery UI</p></li>
-<li><p><a href="http://pep.briangonzalez.org">pep.jquery.js</a> - A lightweight plugin for kinetic-drag on mobile &amp; desktop</p></li>
-<li><p><a href="http://github.com/stephband/jquery.event.move/">jQuery.event.move</a> - jQuery special events <b>movestart</b>, <b>move</b> and <b>moveend</b> for tracking touch and mouse moves, throttled to browser animation frames, and exposing information about distance and velocity of fingers. Demo at <a href="http://stephband.info/jquery.event.move/">stephband.info/jquery.event.move/</a>.</p></li>
-<li><p><p><a href="http://github.com/stephband/jquery.event.swipe/">jQuery.event.swipe</a> - jQuery special events for the gestures <b>swipeleft</b>, <b>swiperight</b>, <b>swipeup</b> and <b>swipedown</b>, built on top of jQuery.event.move. Demo at <a href="http://stephband.info/jquery.event.swipe/">stephband.info/jquery.event.swipe/</a>.</p></p>
-<h1><h1 id="gestures">gestures</h1></h1>
-</li>
-<li><p><p><a href="https://github.com/emberjs-addons/sproutcore-touch/">Ember-Touch</a> - A lightweight library for building and using touch gestures with Ember Applications.</p></p>
-</li>
+</ul>
+<h2><h2 id="gestures">Gestures</h2></h2>
+<ul>
+<li><p><a href="https://github.com/emberjs-addons/sproutcore-touch/">Ember-Touch</a> - A lightweight library for building and using touch gestures with Ember Applications.</p></li>
 <li><p><a href="https://github.com/plainview/Jester">Jester</a> - Easy JavaScript gesture recognition for iPhone and iPad.</p></li>
 <li><p><a href="https://github.com/taitems/Mobile-Web-based-Gesture-Recognition">Mobile-Web-based-Gesture-Recognition</a> - Based on <a href="http://depts.washington.edu/aimgroup/proj/dollar/">Dollar</a>. <a href="http://taitems.github.com/Mobile-Web-based-Gesture-Recognition/">Demo</a>.</p></li>
 <li><p><a href="https://github.com/alexgibson/shake.js">shake.js</a> - A custom &#39;shake&#39; event plugin for mobile web browsers using device accelerometer. (Okay, not strictly touch, but it does require you to use your hand :P)</p></li>
 <li><p><a href="http://dojotoolkit.org/reference-guide/1.7/dojox/gesture.html">dojox/gesture</a> - Dojo detection functions for gesture events</p></li>
 </ul>
-<h1><h1 id="scrolling">scrolling</h1></h1>
+<h2><h2 id="scrolling">Scrolling</h2></h2>
 <ul>
 <li><p><a href="http://uxebu.com/blog/2010/04/27/touchscroll-a-scrolling-layer-for-webkit-mobile/">TouchScroll</a></p></li>
 <li><p><a href="http://cubiq.org/iscroll-4">iScroll</a></p></li>
@@ -114,25 +129,25 @@
 <li><p><a href="http://iwantaneff.in/repo/plugins/droid-touch/droid.overscroll/">jQuery Overscroll</a></p></li>
 <li><p><a href="http://zynga.github.com/scroller/">Zynga Scroller</a></p></li>
 </ul>
-<h1><h1 id="speeding up click events">speeding up click events</h1></h1>
+<h2><h2 id="speeding up click events">Speeding Up Click Events</h2></h2>
 <ul>
 <li><p><a href="http://code.google.com/mobile/articles/fast_buttons.html">FastButton</a></p></li>
 <li><p><a href="https://github.com/davidcalhoun/energize.js">energize.js</a></p></li>
 <li><p><a href="https://github.com/ucsf-ckm/LightningTouch">Lightning Touch</a></p></li>
 </ul>
-<h1><h1 id="debugging">debugging</h1></h1>
+<h1><h1 id="debugging">Debugging</h1></h1>
 <ul>
 <li><p><a href="http://www.vodori.com/blog/phantom-limb.html">phantom limb</a> - make desktop browsers simulate touch events. with a big hand</p></li>
 <li><p><a href="https://github.com/davidcalhoun/touche">touche</a></p></li>
 </ul>
-<h1><h1 id="touch specific components">touch specific components</h1></h1>
+<h2><h2 id="touch specific components">Touch Specific Components</h2></h2>
 <ul>
 <li><p><a href="http://swipejs.com/">Swipe JS</a> - carousel (aka slider) component that is touch friendly</p></li>
 <li><p><a href="http://www.idangero.us/sliders/swiper/">Swiper</a> - mobile touch slider with hardware accelerated transitions</p></li>
 <li><p><a href="https://github.com/filamentgroup/jqm-pagination">jQuery Mobile Pagination</a> - touch-drag pagination between separate HTML documents or jQuery Mobile &quot;pages&quot;</p></li>
 <li><p><a href="https://github.com/alexgibson/WKSlider">wkslider</a> - A touch–optimised UI range slider JavaScript plugin (no dependencies)</p></li>
 </ul>
-<h1><h1 id="multimedia (videos, tutorials, etc.)">multimedia (videos, tutorials, etc.)</h1></h1>
+<h2><h2 id="multimedia (videos, tutorials, etc.)">Multimedia (videos, tutorials, etc.)</h2></h2>
 <ul>
 <li><p><a href="http://www.yuiblog.com/blog/2012/02/23/video-stephen-woods-html5-touch/">Video: &quot;Creating Responsive HTML5 Touch Interfaces&quot; (Stephen Woods, Flickr)</a></p></li>
 </ul>
